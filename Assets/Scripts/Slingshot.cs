@@ -134,6 +134,10 @@ public class Slingshot : MonoBehaviour{
             FollowCam.POI = projectile;
 
             projectile = null;
+
+            MissionDemolition.ShotsFired();
+
+            ProjectileLine.S.poi = projectile;
         }
     }
 }
