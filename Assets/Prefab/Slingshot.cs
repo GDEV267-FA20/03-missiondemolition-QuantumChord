@@ -84,7 +84,7 @@ public class Slingshot : MonoBehaviour{
 
         mousePos2D.z = -Camera.main.transform.position.z;
 
-        Vector3 mousePos3D = Camera.main.ScreenToViewportPoint(mousePos2D);
+        Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
 
         //Find the delta from the launchPos to mousePos3D
 
